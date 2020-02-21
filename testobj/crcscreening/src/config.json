@@ -1,0 +1,220 @@
+{
+  "id":"crcscreening",
+  "service":"Colorectal Cancer Screening",
+  "filenames": {
+        "age": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80
+        ]
+    },
+    "columns": {
+        "gender": [
+            "Male",
+            "Female"
+        ],
+        "race": [
+            "Non-hispanic white",
+            "Non-hispanic black",
+            "Hispanic",
+            "All Other Race"
+        ],
+        "smoker": [
+            false,
+            true
+        ],
+        "colitis": [
+          false,
+          true
+        ],
+        "fap": [
+          false,
+          true
+        ],
+        "obesity": [
+          false,
+          true
+        ],
+        "hiv": [
+            "No",
+            "Unknown",
+            "Yes"
+        ],
+        "famcrc": [
+            "None",
+            "1 >=60y",
+            "1 50-59y",
+            "1 <=49y",
+            "2"
+        ]
+    },
+    "factors": {
+        "gender": 960,
+        "race": 240,
+        "smoker": 120,
+        "colitis": 60,
+        "fap": 30,
+        "obesity": 15,
+        "hiv": 5,
+        "famcrc": 1
+    },
+    "files": [
+        {
+            "name": "50.csv",
+            "offset": 0
+        },
+        {
+            "name": "51.csv",
+            "offset": 0
+        },
+        {
+            "name": "52.csv",
+            "offset": 0
+        },
+        {
+            "name": "53.csv",
+            "offset": 0
+        },
+        {
+            "name": "54.csv",
+            "offset": 0
+        },
+        {
+            "name": "55.csv",
+            "offset": 0
+        },
+        {
+            "name": "56.csv",
+            "offset": 0
+        },
+        {
+            "name": "57.csv",
+            "offset": 0
+        },
+        {
+            "name": "58.csv",
+            "offset": 0
+        },
+        {
+            "name": "59.csv",
+            "offset": 0
+        },
+        {
+            "name": "60.csv",
+            "offset": 0
+        },
+        {
+            "name": "61.csv",
+            "offset": 0
+        },
+        {
+            "name": "62.csv",
+            "offset": 0
+        },
+        {
+            "name": "63.csv",
+            "offset": 0
+        },
+        {
+            "name": "64.csv",
+            "offset": 0
+        },
+        {
+            "name": "65.csv",
+            "offset": 0
+        },
+        {
+            "name": "66.csv",
+            "offset": 0
+        },
+        {
+            "name": "67.csv",
+            "offset": 0
+        },
+        {
+            "name": "68.csv",
+            "offset": 0
+        },
+        {
+            "name": "69.csv",
+            "offset": 0
+        },
+        {
+            "name": "70.csv",
+            "offset": 0
+        },
+        {
+            "name": "71.csv",
+            "offset": 0
+        },
+        {
+            "name": "72.csv",
+            "offset": 0
+        },
+        {
+            "name": "73.csv",
+            "offset": 0
+        },
+        {
+            "name": "74.csv",
+            "offset": 0
+        },
+        {
+            "name": "75.csv",
+            "offset": 0
+        },
+        {
+            "name": "76.csv",
+            "offset": 0
+        },
+        {
+            "name": "77.csv",
+            "offset": 0
+        },
+        {
+            "name": "78.csv",
+            "offset": 0
+        },
+        {
+            "name": "79.csv",
+            "offset": 0
+        },
+        {
+            "name": "80.csv",
+            "offset": 0
+        }
+    ],
+    "debug": true,
+    "dataset_full": true,
+    "csv_with_header_row": true,
+    "datatype": "Test",
+    "updatedOn": "20200211"
+}

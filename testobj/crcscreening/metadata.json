@@ -1,0 +1,22 @@
+{
+    "@id": "99999-crcscreening",
+    "@type": "koio:KnowledgeObject",
+    "identifier": "ark:/99999/crcscreening",
+    "version": "1.0.0",
+    "title": "QALY Gain By Lung Cancer Screening",
+    "contributors": "Kgrid Team",
+    "description": "Quality-Adjusted Life Year Gain By Lung Cancer Screening",
+    "keywords": [
+        "QALY",
+        "Lung Cancer",
+        "Screening"
+    ],
+    "hasServiceSpecification": "service.yaml",
+    "hasDeploymentSpecification": "service.yaml",
+    "hasPayload": [
+        "dist/main.js"
+    ],
+    "@context": [
+        "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+    ]
+}

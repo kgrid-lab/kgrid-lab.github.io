@@ -1,0 +1,58 @@
+openapi: 3.0.0
+info:
+  version: '1.0.0'
+  title: QALY Gain By Colorectal Cancer Screening
+  description: qaly gain by colorectal cancer screening
+servers:
+  - url: /99999/crcscreening
+    description: qaly gain by colorectal cancer screening
+paths:
+  /qalygain:
+    post:
+      description: qaly gain by colorectal cancer screening
+      operationId: crcancerscreeningqalygain
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/input'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: 'https://demo.kgrid.org/schemas/basicerror.yaml'
+      x-kgrid-activation:
+        artifact: src/index.js
+        adapter: JAVASCRIPT
+        entry: qalygain
+components:
+  schemas:
+    input:
+      required:
+        - features
+      properties:
+        features:
+          type: object
+          properties:
+            id:
+              type: string
+            features:
+              type: object
+          example:
+            $ref: https://demo.kgrid.org/schemas/takslerr01PtFeaturesSample.json#/patient/features
+    output:
+      required:
+        - result
+      properties:
+        result:
+          type: object
