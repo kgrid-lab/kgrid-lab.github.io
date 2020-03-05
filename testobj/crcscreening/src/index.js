@@ -11,10 +11,15 @@ function qalygain(inputs){
   outputObj.id=config.id
   outputObj.service = config.service
   if(Object.keys(luindex).length!=0){
-    outputObj.data_source = {}
-    outputObj.data_source.updateDate = config.updatedOn
-    outputObj.data_source.type = config.datatype
-    outputObj.qaly = qalyears(config, luindex)
+    var result = qalyears(config, luindex)
+    if(Object.keys(result).length!=0){
+      outputObj.qaly = result
+      outputObj.data_source = {}
+      outputObj.data_source.updateDate = config.updatedOn
+      outputObj.data_source.type = config.datatype
+    } else {
+      outputObj.error = "Data missing."
+    }
   } else {
     outputObj.error = "No data available."
   }
