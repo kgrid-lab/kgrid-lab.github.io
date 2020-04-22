@@ -9,7 +9,8 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "fs-extra": "^8.1.0"
+        "fs-extra": "^8.1.0",
+        "@kgrid/qalyutil": "https://kgrid-lab.github.io/testlib/kgrid-qalyutil-1.0.1.tgz"
     },
     "devDependencies": {
         "@babel/cli": "^7.8.4",
